@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Login And Registration Form - Easy Tutorials</title>
+    <link rel="stylesheet" href="css/style2.css">
+      
+    
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+              <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Register </button>
+                
+            </div>
+        
+        <form id="login" class="input-group" action="bookreg_code.py">
+            <input type="text" class="input-field" placeholder="Book Title" name="a1" required>
+            <input type="text" class="input-field" placeholder="Book Author" name="a2" required>
+			<input type="text" class="input-field" placeholder="Catagory" name="a3" required>
+			<input type="text" class="input-field" placeholder="Publisher" name="a4" required>
+			
+           
+            <button type="submit" class="submit-btn">Insert</button>
+           
+        </form>
+        
+    </div>
+  </div>
+  <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+      
+      function register(){
+          x.style.left = "-400px";
+          y.style.left = "50px";
+          z.style.left = "110px";
+      }
+      function login(){
+          x.style.left = "50px";
+          y.style.left = "450px";
+          z.style.left = "0";
+      }
+  </script>
+</body>
+</html>
